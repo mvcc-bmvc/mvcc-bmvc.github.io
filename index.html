@@ -1,262 +1,252 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Machine Vision for Climate Change (MVCC) - BMVC 2025 Workshop</title>
-      <style>
-    body {
-      font-family: 'Segoe UI', Arial, sans-serif;
-      background: #f4f8fb;
-      color: #222;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background: #0077b6;
-      color: #fff;
-      padding: 2rem 1rem 1.5rem 1rem;
-      text-align: center;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-    }
-    h1, h2, h3 {
-      margin-top: 0;
-      font-weight: 600;
-    }
-    main {
-      max-width: 800px;
-      background: #fff;
-      margin: 2rem auto;
-      padding: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 24px rgba(0,0,0,0.08);
-    }
-    a {
-      color: #0077b6;
-      text-decoration: none;
-      transition: color 0.2s;
-    }
-    a:hover {
-      color: #023e8a;
-      text-decoration: underline;
-    }
-    ul, ol {
-      padding-left: 1.5rem;
-    }
-    footer {
-      text-align: center;
-      color: #555;
-      padding: 1.5rem 0 1rem 0;
-      font-size: 0.95em;
-    }
-    .button {
-      background: #0096c7;
-      color: #fff;
-      padding: 0.8em 1.5em;
-      border: none;
-      border-radius: 6px;
-      font-size: 1em;
-      cursor: pointer;
-      transition: background 0.2s;
-      margin-top: 1rem;
-      display: inline-block;
-    }
-    .button:hover {
-      background: #023e8a;
-    }
-    @media (max-width: 600px) {
-      main {
-        padding: 1rem;
-        margin: 1rem;
-      }
-      header {
-        padding: 1.2rem 1rem 1rem 1rem;
-      }
-    }
-  </style>
-</head>
-<body>
-    <header>
-        <div class="banner">
-            <h1>Machine Vision for Climate Change (MVCC)<br>BMVC 2025 Workshop</h1>
-        </div>
-        <p style="margin-top:1em;">half-day Workshop | <strong>BMVC 2025</strong></p>
-    </header>
-    <main>
-        <section>
-            <h2>About the Workshop</h2>
-            <p>
-                The Machine Vision for Climate Change (MVCC) workshop at BMVC 2025 focuses on the intersection of computer vision and climate change mitigation, adaptation, and sustainability. The workshop aims to foster discussions and research on the use of cutting-edge vision technologies—such as deep learning, satellite imagery, UAVs, and remote sensing—for addressing climate and environmental challenges. We also invite critical perspectives on the environmental impact of large vision models themselves, including energy efficiency, ethics, and responsible deployment.
-            </p>
-        </section>
-        <section>
-            <h2>Workshop Topics</h2>
-            <div class="topics-list">
-            <ul>
-                <li><strong>Sustainable Built Environment</strong>
-                    <ul>
-                        <li>Transport, Infrastructure, and Mobility</li>
-                        <li>Urban Design and Planning for Sustainable Cities</li>
-                        <li>Power and Energy, including Renewable Sources</li>
-                    </ul>
-                </li>
-                <li><strong>Ecosystems and Natural Living Environment</strong>
-                    <ul>
-                        <li>Forestry and Land Use</li>
-                        <li>Biodiversity and Automated Wildlife Monitoring</li>
-                        <li>Remote Sensing Techniques for Climate Monitoring</li>
-                        <li>Precision Agriculture, Crop Monitoring, Yield Prediction</li>
-                        <li>Satellite Imagery Analysis for Deforestation and Land Use</li>
-                    </ul>
-                </li>
-                <li><strong>Climate and Weather Events</strong>
-                    <ul>
-                        <li>Air Quality</li>
-                        <li>Natural Disaster Management and Relief</li>
-                        <li>Earth Observation Monitoring</li>
-                        <li>Extreme Weather Events</li>
-                        <li>Climate Change and Public Health</li>
-                    </ul>
-                </li>
-                <li><strong>Vision Models Contributing to Climate Change</strong>
-                    <ul>
-                        <li>Ethics, Bias, and Accountability in Climate-related Vision Models</li>
-                        <li>Lightweight Vision Models for Edge Deployment (e.g., Drones)</li>
-                        <li>Improving Energy Utilisation for Vision Model Training</li>
-                        <li>Interpretable AI and Explainability in Environmental Vision Systems</li>
-                    </ul>
-                </li>
-            </ul>
-            </div>
-        </section>
-        <section>
-            <h2>Organizing Team</h2>
-            <div class="organisers">
-                <div class="person">
-                    <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="Dr Lakshmi Babu Saheer">
-                    <strong>Dr Lakshmi Babu Saheer</strong><br>
-                    Director, Computing Informatics and Applications Research Group<br>
-                    Assistant Professor in AI<br>
-                    Anglia Ruskin University, UK<br>
-                    <a href="mailto:lakshmi.babu-saheer@aru.ac.uk">lakshmi.babu-saheer@aru.ac.uk</a>
-                </div>
-                <div class="person">
-                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Dr Mahdi Maktabdar Oghaz">
-                    <strong>Dr Mahdi Maktabdar Oghaz</strong><br>
-                    Assistant Professor in AI<br>
-                    Anglia Ruskin University, UK<br>
-                    <a href="mailto:mahdi.maktabdar@aru.ac.uk">mahdi.maktabdar@aru.ac.uk</a>
-                </div>
-                <div class="person">
-                    <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Prof Jennifer Schooling">
-                    <strong>Prof Jennifer Schooling</strong><br>
-                    Professor in Digital Innovation and Smart Places<br>
-                    Anglia Ruskin University, UK<br>
-                    <a href="mailto:jennifer.schooling@aru.ac.uk">jennifer.schooling@aru.ac.uk</a>
-                </div>
-                <div class="person">
-                    <img src="https://randomuser.me/api/portraits/men/58.jpg" alt="Dr Manu Sasidharan">
-                    <strong>Dr Manu Sasidharan</strong><br>
-                    Assistant Professor in Infrastructure Asset Management<br>
-                    University College London, UK<br>
-                    <a href="mailto:manu.sasidharan@ucl.ac.uk">manu.sasidharan@ucl.ac.uk</a>
-                </div>
-                <div class="person">
-                    <img src="https://randomuser.me/api/portraits/men/68.jpg" alt="Dr Avar Almukhtar">
-                    <strong>Dr Avar Almukhtar</strong><br>
-                    Senior Lecturer in Construction Informatics<br>
-                    Oxford Brookes University, UK<br>
-                    <a href="mailto:a.almukhtar@brookes.ac.uk">a.almukhtar@brookes.ac.uk</a>
-                </div>
-                <div class="person">
-                    <img src="https://randomuser.me/api/portraits/men/21.jpg" alt="Dr Raul Aquinos Santos">
-                    <strong>Dr Raul Aquinos Santos</strong><br>
-                    Professor and Chair, TG-AI for Flood Monitoring and Detection (ITU)<br>
-                    Universidad de Colima, Mexico<br>
-                    <a href="mailto:aquinor@ucol.mx">aquinor@ucol.mx</a>
-                </div>
-            </div>
-        </section>
-        <section>
-            <h2>Keynote Speakers</h2>
-            <div class="keynotes">
-                <div class="person">
-                    <img src="https://randomuser.me/api/portraits/men/11.jpg" alt="Dr David Rolnick">
-                    <strong>Dr David Rolnick</strong><br>
-                    Assistant Professor, McGill University & Core Academic Member at Mila Quebec AI Institute<br>
-                    <a href="mailto:drolnick@mila.quebec">drolnick@mila.quebec</a>
-                    <p style="font-size:0.98em; margin-top:0.4em;">
-                        Dr. Rolnick's research focuses on applying machine learning to climate change. He is Co-founder and Chair of Climate Change AI and Scientific Co-director of Sustainability in the Digital Age. He received his Ph.D. in Applied Mathematics from MIT, and has been recognized by MIT Technology Review's "35 Innovators Under 35".
-                    </p>
-                </div>
-                <div class="person">
-                    <img src="https://randomuser.me/api/portraits/men/36.jpg" alt="Dr Mehran Eskandari Torbaghan">
-                    <strong>Dr Mehran Eskandari Torbaghan</strong><br>
-                    Assistant Professor in Infrastructure Asset Management<br>
-                    University of Birmingham, UK<br>
-                    <a href="mailto:m.eskandaritorbaghan@bham.ac.uk">m.eskandaritorbaghan@bham.ac.uk</a>
-                    <p style="font-size:0.98em; margin-top:0.4em;">
-                        Dr. Eskandari Torbaghan specializes in smart management of infrastructure systems and robotics for urban infrastructure. He has significant experience both in industry and academia, with research focused on risk management and linear infrastructure systems.
-                    </p>
-                </div>
-                <div class="person">
-                    <img src="https://randomuser.me/api/portraits/men/29.jpg" alt="Dr Manuel Herrera">
-                    <strong>Dr Manuel Herrera</strong><br>
-                    Lecturer in Hydrology, Newcastle University & Senior Research Associate, University of Cambridge<br>
-                    <a href="mailto:amh226@cam.ac.uk">amh226@cam.ac.uk</a>
-                    <p style="font-size:0.98em; margin-top:0.4em;">
-                        Dr. Herrera's research leverages AI and data-driven models for climate adaptation in water infrastructure. He is recognized among the top 2% of global researchers in AI and engineering and is a Fellow of the Royal Statistical Society.
-                    </p>
-                </div>
-                <div class="person">
-                    <img src="https://randomuser.me/api/portraits/men/61.jpg" alt="Luke Bateson">
-                    <strong>Luke Bateson</strong><br>
-                    Head of Geodesy and Remote Sensing<br>
-                    British Geological Survey, UK<br>
-                    <a href="mailto:lbateson@bgs.ac.uk">lbateson@bgs.ac.uk</a>
-                    <p style="font-size:0.98em; margin-top:0.4em;">
-                        Luke Bateson has over 25 years' experience in earth observation, specializing in geological mapping and InSAR ground motions. He advises the European Environment Agency and manages major remote sensing projects.
-                    </p>
-                </div>
-            </div>
-        </section>
-        <section class="important-dates">
-            <h2>Important Dates</h2>
-            <ul>
-                <li><strong>Submission Deadline:</strong> <span>August 5, 2025</span></li>
-                <li><strong>Notification of Acceptance:</strong> <span>September 2, 2025</span></li>
-                <li><strong>Camera-ready Submission:</strong> <span>September 15, 2025</span></li>
-                <li><strong>Workshop Date:</strong> <span>November 10, 2025</span></li>
-                <li><strong>BMVC 2025 Conference:</strong> <span>November 9–13, 2025</span></li>
-            </ul>
-        </section>
-        <section>
-            <h2>Location</h2>
-            <div class="location">
-                <img src="https://www.bmvc2025.org/images/venue.jpg" alt="BMVC 2025 Venue">
-                <div>
-                    <strong>BMVC 2025</strong><br>
-                    University of Cambridge,<br>
-                    Cambridge, United Kingdom<br>
-                    <a href="https://www.bmvc2025.org" target="_blank">View Conference Website</a>
-                </div>
-            </div>
-        </section>
-        <section class="submission-link">
-            <h2>Paper Submission</h2>
-            <p>We invite high-quality submissions addressing topics at the intersection of computer vision and climate change. All papers will be peer-reviewed and selected for oral or poster presentation.</p>
-            <a href="https://easychair.org/conferences/?conf=mvccbmvc2025" target="_blank">Submit Your Paper</a>
-        </section>
-        <section>
-            <h2>Contact</h2>
-            <p>For any inquiries, please contact the workshop lead organizer: <br>
-                <a href="mailto:lakshmi.babu-saheer@aru.ac.uk">lakshmi.babu-saheer@aru.ac.uk</a>
-            </p>
-        </section>
-    </main>
-    <footer style="text-align:center; padding:2em 0 1em 0; color:#888; font-size:0.95em;">
-        &copy; 2025 MVCC Workshop | BMVC 2025 | Climate Change, Sustainability, Machine Vision <br>
-        The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
-    </footer>
-</body>
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Editorial by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo"><strong>Editorial</strong> by HTML5 UP</a>
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
+									</ul>
+								</header>
+
+							<!-- Banner -->
+								<section id="banner">
+									<div class="content">
+										<header>
+											<h1>Hi, I’m Editorial<br />
+											by HTML5 UP</h1>
+											<p>A free and fully responsive site template</p>
+										</header>
+										<p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam.</p>
+										<ul class="actions">
+											<li><a href="#" class="button big">Learn More</a></li>
+										</ul>
+									</div>
+									<span class="image object">
+										<img src="images/pic10.jpg" alt="" />
+									</span>
+								</section>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Erat lacinia</h2>
+									</header>
+									<div class="features">
+										<article>
+											<span class="icon fa-gem"></span>
+											<div class="content">
+												<h3>Portitor ullamcorper</h3>
+												<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											</div>
+										</article>
+										<article>
+											<span class="icon solid fa-paper-plane"></span>
+											<div class="content">
+												<h3>Sapien veroeros</h3>
+												<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											</div>
+										</article>
+										<article>
+											<span class="icon solid fa-rocket"></span>
+											<div class="content">
+												<h3>Quam lorem ipsum</h3>
+												<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											</div>
+										</article>
+										<article>
+											<span class="icon solid fa-signal"></span>
+											<div class="content">
+												<h3>Sed magna finibus</h3>
+												<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											</div>
+										</article>
+									</div>
+								</section>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Ipsum sed dolor</h2>
+									</header>
+									<div class="posts">
+										<article>
+											<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+											<h3>Interdum aenean</h3>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											<ul class="actions">
+												<li><a href="#" class="button">More</a></li>
+											</ul>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
+											<h3>Nulla amet dolore</h3>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											<ul class="actions">
+												<li><a href="#" class="button">More</a></li>
+											</ul>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
+											<h3>Tempus ullamcorper</h3>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											<ul class="actions">
+												<li><a href="#" class="button">More</a></li>
+											</ul>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
+											<h3>Sed etiam facilis</h3>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											<ul class="actions">
+												<li><a href="#" class="button">More</a></li>
+											</ul>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
+											<h3>Feugiat lorem aenean</h3>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											<ul class="actions">
+												<li><a href="#" class="button">More</a></li>
+											</ul>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
+											<h3>Amet varius aliquam</h3>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											<ul class="actions">
+												<li><a href="#" class="button">More</a></li>
+											</ul>
+										</article>
+									</div>
+								</section>
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+							<!-- Search -->
+								<section id="search" class="alt">
+									<form method="post" action="#">
+										<input type="text" name="query" id="query" placeholder="Search" />
+									</form>
+								</section>
+
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>Menu</h2>
+									</header>
+									<ul>
+										<li><a href="index.html">Homepage</a></li>
+										<li><a href="generic.html">Generic</a></li>
+										<li><a href="elements.html">Elements</a></li>
+										<li>
+											<span class="opener">Submenu</span>
+											<ul>
+												<li><a href="#">Lorem Dolor</a></li>
+												<li><a href="#">Ipsum Adipiscing</a></li>
+												<li><a href="#">Tempus Magna</a></li>
+												<li><a href="#">Feugiat Veroeros</a></li>
+											</ul>
+										</li>
+										<li><a href="#">Etiam Dolore</a></li>
+										<li><a href="#">Adipiscing</a></li>
+										<li>
+											<span class="opener">Another Submenu</span>
+											<ul>
+												<li><a href="#">Lorem Dolor</a></li>
+												<li><a href="#">Ipsum Adipiscing</a></li>
+												<li><a href="#">Tempus Magna</a></li>
+												<li><a href="#">Feugiat Veroeros</a></li>
+											</ul>
+										</li>
+										<li><a href="#">Maximus Erat</a></li>
+										<li><a href="#">Sapien Mauris</a></li>
+										<li><a href="#">Amet Lacinia</a></li>
+									</ul>
+								</nav>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Ante interdum</h2>
+									</header>
+									<div class="mini-posts">
+										<article>
+											<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+										</article>
+									</div>
+									<ul class="actions">
+										<li><a href="#" class="button">More</a></li>
+									</ul>
+								</section>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Get in touch</h2>
+									</header>
+									<p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+									<ul class="contact">
+										<li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
+										<li class="icon solid fa-phone">(000) 000-0000</li>
+										<li class="icon solid fa-home">1234 Somewhere Road #8254<br />
+										Nashville, TN 00000-0000</li>
+									</ul>
+								</section>
+
+							<!-- Footer -->
+								<footer id="footer">
+									<p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+								</footer>
+
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
