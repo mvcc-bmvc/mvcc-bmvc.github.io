@@ -2295,5 +2295,5 @@ button,
 }
 .features article .icon img {
   width: 100px;   /* Or any specific size like 100%, 5em, etc. */
-  height: 120px;  /* You can also use auto to preserve aspect ratio */
+  height: 121px;  /* You can also use auto to preserve aspect ratio */
 }
