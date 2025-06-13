@@ -1505,7 +1505,7 @@ button,
   height: 3.5em;
   letter-spacing: 0.075em;
   line-height: 3.5em;
-  padding: 0 2.25em;
+  padding: 0 1.25em;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -1547,7 +1547,7 @@ button,
   .button.large {
     font-size: 1em;
     height: 3.65em;
-    line-height: 3.65em; }
+    line-height: 2.65em; }
   input[type="submit"].primary,
   input[type="reset"].primary,
   input[type="button"].primary,
@@ -1636,8 +1636,8 @@ button,
       -ms-flex-shrink: 0;
       flex-shrink: 0;
       display: block;
-      height: 10em;
-      line-height: 10em;
+      height: 5em;
+      line-height: 5em;
       margin: 0 2em 0 0;
       text-align: center;
       width: 10em; }
@@ -1690,7 +1690,7 @@ button,
           margin-bottom: 0; }
         .features article .icon {
           height: 8em;
-          line-height: 8em;
+          line-height: 5em;
           width: 8em; }
           .features article .icon:before {
             font-size: 2.25rem; }
@@ -1710,7 +1710,7 @@ button,
       align-items: flex-start; }
       .features article .icon {
         height: 6em;
-        line-height: 6em;
+        line-height: 4em;
         margin: 0 0 1.5em 0;
         width: 6em; }
         .features article .icon:before {
@@ -2271,3 +2271,29 @@ button,
     border-top: 0;
     margin-top: 0;
     padding-top: 0; }
+
+.features .content {
+  line-height: 1.5; /* You can adjust this value (e.g., 1.1, 1.3) */
+}
+
+.features article .icon {
+  line-height: 0;
+  height: auto;
+  width: auto;
+  text-align: center;
+  position: relative;
+}
+
+.features article .icon img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.features article .icon:after {
+  display: none;
+}
+.features article .icon img {
+  width: 100px;   /* Or any specific size like 100%, 5em, etc. */
+  height: 120px;  /* You can also use auto to preserve aspect ratio */
+}
