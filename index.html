@@ -166,13 +166,20 @@
                                           <p>Workshop Date: <strong>November 27, 2025</strong></p>
 										  </strong></p>
 										</header>	
+                                    <div id="countdown" style="font-size:1.5em; margin-top:1em;">
+  <span id="days">0</span>d
+  <span id="hours">0</span>h
+  <span id="minutes">0</span>m
+  <span id="seconds">0</span>s
+                                        to submission deadline! 
+</div>
                                     
                                     
 										
 									
                             </section>
                         
-                        			<section id="subg">
+                        			<section id="subgu">
 										<header class="major">
 	<h2>Submission Guidelines:</h2>
 									<header>
@@ -195,7 +202,7 @@
                         
                                                     </section>
                         
-                        			<section id="subg">
+                        			<section id="submit">
 										<header class="major">
 	<h2>Submit Your Work:</h2>
 									<header>
@@ -217,7 +224,7 @@
                 
                                                                     </section>
                         
-                        			<section id="subg">
+                        			<section id="contact">
 										<header class="major">
 	<h2>Contact Us:</h2>
 									<header>
@@ -248,6 +255,38 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+        
+        <script>
+  // Set the target date and time (midnight on July 25th, 2025)
+  const countdownDate = new Date('2025-07-25T00:00:00Z').getTime();
+
+  function updateCountdown() {
+    const now = new Date().getTime();
+    const distance = countdownDate - now;
+
+    // Time calculations
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    // Display the result
+    document.getElementById("days").textContent = days;
+    document.getElementById("hours").textContent = hours;
+    document.getElementById("minutes").textContent = minutes;
+    document.getElementById("seconds").textContent = seconds;
+
+    // If the countdown is finished
+    if (distance < 0) {
+      document.getElementById("countdown").innerHTML = "Event started!";
+      clearInterval(timerInterval);
+    }
+  }
+
+  // Update the countdown every 1 second
+  const timerInterval = setInterval(updateCountdown, 1000);
+  updateCountdown(); // Run once immediately
+</script>
 
 	</body>
 </html>
