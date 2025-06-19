@@ -2297,3 +2297,11 @@ button,
   width: 100px;   /* Or any specific size like 100%, 5em, etc. */
   height: 121px;  /* You can also use auto to preserve aspect ratio */
 }
+
+
+.posts {
+  max-width: 1400px;   /* or any width you prefer */
+  width: 100%;
+  margin-left: 0;
+  margin-right: auto;
+}
