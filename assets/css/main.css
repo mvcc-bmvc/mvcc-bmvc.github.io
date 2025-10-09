@@ -1755,13 +1755,13 @@ button,
       left: -3em;
       position: absolute;
       top: 0;
-      width: 1px; }
+      width: 0px; }
     .posts article:after {
       background: rgba(210, 215, 217, 0.75);
       bottom: -3em;
       content: '';
       display: block;
-      height: 1px;
+      height: 0px;
       position: absolute;
       right: 0;
       width: calc(100% + 6em); }
@@ -2299,9 +2299,15 @@ button,
 }
 
 
-.posts {
-  max-width: 1400px;   /* or any width you prefer */
-  width: 100%;
-  margin-left: 0;
-  margin-right: auto;
+#keynote .posts {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 2em; /* Optional: space between articles */
+  overflow-x: auto; /* Optional: horizontal scrolling if necessary */
+}
+#keynote .posts article {
+  min-width: 250px; /* Optional: set a minimum width for each article */
+    
+    /* Prevent shrinking */
 }
